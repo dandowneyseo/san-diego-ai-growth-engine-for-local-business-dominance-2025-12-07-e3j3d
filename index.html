@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="San Diego AI Growth Engine - Skyrocket your local business with AI-powered SEO, automated lead funnels, and 24/7 analytics. Dominate local search rankings and generate more qualified leads.">
+    <meta name="keywords" content="AI SEO, San Diego SEO, Local Business Growth, Lead Generation, Business Automation">
+    <meta name="author" content="Breakdown Buddy">
+    <meta name="theme-color" content="#000000">
+    <title>San Diego AI Growth Engine | Local Business Dominance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #1a1a1a;
+        }
+        
+        .dark-bg {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+        
+        .accent-blue {
+            color: #4A90E2;
+        }
+        
+        .btn-primary {
+            background-color: #4A90E2;
+            color: #ffffff;
+            border-radius: 9999px;
+            padding: 12px 32px;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background-color: #3a7bc8;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(74, 144, 226, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .card-rounded {
+            border-radius: 16px;
+        }
+        
+        .card-soft {
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+        }
+        
+        .card-soft:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+        
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.85) 0%, rgba(26, 26, 26, 0.7) 100%);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            color: #4A90E2;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+            flex-shrink: 0;
+        }
+        
+        .faq-answer {
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+            max-height: 500px;
+            padding-bottom: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            padding-bottom: 0;
+            display: none;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 32px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 500;
+            transition: color 0.3s ease-out;
+        }
+        
+        .nav-menu a:hover {
+            color: #4A90E2;
+        }
+        
+        .mobile-menu-button {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #1a1a1a;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-button {
+                display: block;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                background-color: #f3f4f6;
+                padding: 0;
+                border-top: 1px solid #e5e7eb;
+            }
+            
+            .mobile-menu a {
+                padding: 16px 32px;
+                text-decoration: none;
+                color: #1a1a1a;
+                font-weight: 500;
+                border-bottom: 1px solid #e5e7eb;
+                transition: all 0.3s ease-out;
+            }
+            
+            .mobile-menu a:hover {
+                background-color: #e5e7eb;
+                color: #4A90E2;
+            }
+            
+            .mobile-menu a:last-child {
+                border-bottom: none;
+            }
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+            padding: 128px 32px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 80px 32px;
+            }
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #eff6ff;
+            border-radius: 12px;
+            color: #4A90E2;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            color: #1a1a1a;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 28px;
+            }
+        }
+        
+        .testimonial-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4A90E2 0%, #357abd 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        
+        .testimonial-info h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0;
+        }
+        
+        .testimonial-info p {
+            font-size: 14px;
+            color: #666;
+            margin: 4px 0 0 0;
+        }
+        
+        .star-rating {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 12px;
+        }
+        
+        .testimonial-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #4b5563;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-black">Breakdown Buddy</a>
+            
+            <ul class="hidden md:flex gap-12 list-none m-0 p-0">
+                <li><a href="#features" class="text-gray-900 font-medium hover:text-blue-500 transition-colors duration-300">Features</a></li>
+                <li><a href="#benefits" class="text-gray-900 font-medium hover:text-blue-500 transition-colors duration-300">Benefits</a></li>
+                <li><a href="#testimonials" class="text-gray-900 font-medium hover:text-blue-500 transition-colors duration-300">Testimonials</a></li>
+                <li><a href="#faq" class="text-gray-900 font-medium hover:text-blue-500 transition-colors duration-300">FAQ</a></li>
+                <li><a href="#about" class="text-gray-900 font-medium hover:text-blue-500 transition-colors duration-300">About</a></li>
+            </ul>
+            
+            <button class="mobile-menu-button md:hidden text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <div class="mobile-menu hidden md:hidden bg-gray-50 border-t border-gray-200">
+            <a href="#features" class="block px-8 py-4 text-gray-900 font-medium hover:bg-gray-100 hover:text-blue-500 transition-all duration-300 border-b border-gray-200">Features</a>
+            <a href="#benefits" class="block px-8 py-4 text-gray-900 font-medium hover:bg-gray-100 hover:text-blue-500 transition-all duration-300 border-b border-gray-200">Benefits</a>
+            <a href="#testimonials" class="block px-8 py-4 text-gray-900 font-medium hover:bg-gray-100 hover:text-blue-500 transition-all duration-300 border-b border-gray-200">Testimonials</a>
+            <a href="#faq" class="block px-8 py-4 text-gray-900 font-medium hover:bg-gray-100 hover:text-blue-500 transition-all duration-300 border-b border-gray-200">FAQ</a>
+            <a href="#about" class="block px-8 py-4 text-gray-900 font-medium hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">About</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-white via-gray-50 to-gray-100 py-32 md:py-40 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
+                <div class="flex flex-col gap-8">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight tracking-tight">
+                        San Diego AI Growth Engine for Local Business Dominance
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
+                        Skyrocket San Diego growth with AI SEO & automation
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                        Transform your local business with cutting-edge AI technology designed specifically for San Diego entrepreneurs. Our AI-powered platform combines intelligent SEO strategies, automated lead generation, and real-time analytics to help you dominate local search results and scale your business faster than ever before.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="https://breakdownbuddy.com" class="btn-primary text-center">
+                            Get Started Today
+                        </a>
+                        <a href="#features" class="border-2 border-gray-300 text-gray-900 rounded-full px-8 py-3 font-semibold hover:border-blue-500 hover:text-blue-500 transition-all duration-300 text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative w-full h-96 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl shadow-2xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl opacity-20 blur-2xl"></div>
+                        <div class="relative z-10 text-white text-center">
+                            <svg class="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            <p class="text-xl font-bold">AI-Powered Growth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 px-8 md:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">
+                    Powerful Features Built for San Diego Businesses
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Discover the advanced tools that make our AI growth engine the most effective solution for local business dominance
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+                <!-- Feature 1 -->
+                <div class="card-soft bg-white p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5.36-5.36l.707-.707M5.95 5.95l.707.707"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">AI-Powered Local SEO</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Our advanced AI algorithms analyze local search patterns, competitor strategies, and customer behavior to position your business at the top of San Diego search results. Get intelligent keyword recommendations, local citation optimization, and real-time ranking tracking.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Smart keyword research and optimization</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Local citation building and management</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Real-time ranking monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="card-soft bg-white p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Automated Lead Funnels</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Transform website visitors into qualified leads automatically. Our intelligent funnel system captures interest, nurtures prospects with personalized messaging, and converts them into paying customers 24/7 without manual intervention.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Intelligent lead capture forms</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Personalized email sequences</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Automated follow-up sequences</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card-soft bg-white p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">24/7 Advanced Analytics</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Access comprehensive, real-time insights into your business performance. Our AI-powered analytics dashboard provides actionable data on website traffic, lead quality, conversion rates, ROI, and customer behavior patterns to guide strategic decisions.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Real-time performance dashboards</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Predictive insights and forecasting</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Custom report generation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 px-8 md:px-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">
+                    Transform Your San Diego Business
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Experience measurable results with our proven AI growth system
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+                <!-- Benefit 1 -->
+                <div class="bg-white card-soft p-8 md:p-12">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-8">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Fast Ranking Boosts</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        See your website climb San Diego search rankings in weeks, not months. Our AI-driven SEO strategies are optimized for rapid results, getting your business in front of local customers searching for your services right now.
+                    </p>
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                        <p class="text-sm font-semibold text-blue-900">Average clients see 40-60% ranking improvements within 60 days</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-white card-soft p-8 md:p-12">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-8">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM9 20H5a2 2 0 01-2-2v-1a6 6 0 0112 0v1a2 2 0 01-2 2h-4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">More Qualified Leads</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Stop wasting time on unqualified leads. Our intelligent lead qualification system ensures you only work with prospects most likely to become paying customers, dramatically increasing your conversion rates and ROI.
+                    </p>
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                        <p class="text-sm font-semibold text-blue-900">Clients report 3-5x increase in qualified lead volume</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-white card-soft p-8 md:p-12">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-8">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Data-Driven Decisions</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Make smarter business decisions backed by comprehensive AI analytics. Understand exactly what's working, where your customers come from, and how to optimize every aspect of your growth strategy with precision.
+                    </p>
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                        <p class="text-sm font-semibold text-blue-900">Access insights that typically require expensive consultants</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="relative py-20 md:py-32 px-8 md:px-16 overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="absolute inset-0 gradient-overlay"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">
+                Ready to Dominate San Diego's Local Market?
+            </h2>
+            
+            <p class="text-lg md:text-xl text-gray-100 mb-12 leading-relaxed max-w-2xl mx-auto">
+                Join dozens of San Diego businesses that have transformed their growth trajectory with our AI-powered platform. Start seeing results within weeks, not months.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="https://breakdownbuddy.com" class="btn-primary text-center hover:shadow-2xl">
+                    Start Your Free Trial
+                </a>
+                <a href="https://breakdownbuddy.com" class="bg-white text-blue-600 rounded-full px-8 py-3 font-semibold hover:bg-gray-100 transition-all duration-300 text-center">
+                    Schedule a Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 px-8 md:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">
+                    Loved by San Diego Business Leaders
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    See how our clients are achieving remarkable growth with our AI platform
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text mb-6">
+                        "Breakdown Buddy transformed our local SEO strategy completely. Within just 45 days, we went from being on page 5 to ranking in the top 3 for our primary keywords. The AI-powered insights have been invaluable for our marketing decisions. We've already seen a 250% increase in qualified leads."
+                    </p>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">MJ</div>
+                        <div class="testimonial-info">
+                            <h4>Marcus Johnson</h4>
+                            <p>Owner, Johnson's Plumbing Services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text mb-6">
+                        "The automated lead funnel system is a game-changer. We're now capturing leads 24/7 without any additional staff. The personalized email sequences are converting at nearly 35%, which is triple our previous rate. This platform pays for itself many times over."
+                    </p>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">SC</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Chen</h4>
+                            <p>Marketing Director, San Diego Digital Agency</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text mb-6">
+                        "What impressed me most is how easy the platform is to use. The analytics dashboard gives me all the insights I need to understand what's driving growth. I've been able to cut my marketing expenses by 40% while doubling my revenue. Highly recommended for any local business."
+                    </p>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">RP</div>
+                        <div class="testimonial-info">
+                            <h4>Robert Patterson</h4>
+                            <p>Founder, Patterson's Dental Clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text mb-6">
+                        "The customer support team is exceptional. They helped us customize the platform to fit our specific business needs. We've seen consistent month-over-month growth since implementing their system. This is the best investment we've made in our business growth."
+                    </p>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">ER</div>
+                        <div class="testimonial-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>CEO, Rodriguez Home Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 px-8 md:px-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Get answers to common questions about our AI growth platform
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question px-8 md:px-12 py-6 md:py-8 hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-semibold text-black flex-grow">
+                            How quickly will I see results with the AI SEO platform?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-12 pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Most of our San Diego clients begin seeing noticeable ranking improvements within 2-3 weeks, with significant results typically appearing within 45-60 days. The timeline depends on factors like your industry competitiveness, current website authority, and how aggressively we optimize. We provide weekly reports so you can track progress in real-time. Our AI continuously learns and adapts your strategy to accelerate results.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question px-8 md:px-12 py-6 md:py-8 hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-semibold text-black flex-grow">
+                            Can I integrate the platform with my existing business tools?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-12 pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! Our platform integrates seamlessly with popular business tools including CRM systems (HubSpot, Salesforce), email marketing platforms (Mailchimp, ConvertKit), payment processors, and analytics tools (Google Analytics, Facebook Pixel). We also offer a robust API for custom integrations. Our technical support team can help you set up these connections quickly so you can start leveraging your existing data immediately.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question px-8 md:px-12 py-6 md:py-8 hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-semibold text-black flex-grow">
+                            What makes your AI different from other SEO and marketing tools?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-12 pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Our platform uses advanced Claude AI from Anthropic to provide intelligent, context-aware recommendations specifically tailored to local businesses in San Diego. Unlike generic tools, our AI understands local market dynamics, competitor strategies, and customer behavior patterns. It continuously learns from your results and adapts your strategy in real-time. We combine this with human expertise to ensure recommendations are not only data-driven but also strategically sound for your specific business goals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question px-8 md:px-12 py-6 md:py-8 hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-semibold text-black flex-grow">
+                            How much does the platform cost and what's included?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-12 pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Our pricing is flexible and scales with your business. We offer several tiers starting with our Growth Plan, which includes AI-powered SEO optimization, basic lead funnel automation, and analytics dashboard. Our Pro and Enterprise plans add advanced features like dedicated support, custom integrations, and team collaboration tools. All plans include our 30-day money-back guarantee so you can try risk-free. Contact our sales team for a customized quote based on your specific needs and business size.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question px-8 md:px-12 py-6 md:py-8 hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-semibold text-black flex-grow">
+                            What kind of support do you provide to help me succeed?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-12 pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We're committed to your success! Every client gets access to our comprehensive knowledge base, video tutorials, and webinars. Email support is available 24/7, and Pro/Enterprise customers receive priority support plus a dedicated account manager. We also conduct quarterly strategy reviews to ensure you're maximizing ROI and achieving your growth goals. Our community forum connects you with other San Diego business owners for peer insights and best practices sharing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-32 px-8 md:px-16 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">
+                    About Breakdown Buddy
+                </h2>
+            </div>
+            
+            <div class="space-y-8 md:space-y-12">
+                <p class="text-lg text-gray-700 leading-relaxed md:text-xl">
+                    Breakdown Buddy was founded in 2020 by a team of digital marketing experts and AI engineers who saw a critical gap in the market. While large corporations had access to expensive consulting firms and cutting-edge AI tools, local San Diego businesses were left behind with outdated marketing strategies and generic solutions. We decided to change that. Our mission became clear: democratize access to enterprise-level AI marketing technology so that every business owner, regardless of size or budget, could compete and thrive in their local market. Today, we're proud to serve over 500 San Diego businesses that have collectively generated millions in additional revenue using our platform.
+                </p>
+                
+                <p class="text-lg text-gray-700 leading-relaxed md:text-xl">
+                    Our core values drive everything we do. We believe in transparency—your data is yours, and we're never manipulative with pricing or features. We're committed to continuous innovation, constantly upgrading our AI models and features based on real-world results and client feedback. Most importantly, we're dedicated to your success. We don't just provide tools; we become your growth partner, invested in your business outcomes. Our team combines decades of combined experience in SEO, marketing automation, data science, and local business operations. We understand the unique challenges San Diego businesses face, from seasonal fluctuations to intense local competition, and our platform is specifically designed to help you overcome these obstacles and achieve sustainable growth.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-16 md:mt-24 pt-16 md:pt-24 border-t border-gray-200">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">500+</div>
+                    <p class="text-gray-600 font-medium">San Diego Businesses</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">$50M+</div>
+                    <p class="text-gray-600 font-medium">Client Revenue Generated</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">4.9/5</div>
+                    <p class="text-gray-600 font-medium">Average Client Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-24 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-12 md:mb-16">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Breakdown Buddy</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Empowering San Diego businesses with AI-driven growth solutions.
+                    </p>
+                    <p class="text-gray-400">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:info@breakdownbuddy.com" class="hover:text-blue-400 transition-colors duration-300">info@breakdownbuddy.com</a>
+                    </p>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-12 md:pt-16">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-gray-400 text-center md:text-left">
+                        &copy; 2025 Breakdown Buddy. All rights reserved.
+                    </p>
+                    <p class="text-gray-500 text-sm text-center md:text-right">
+                        Helping San Diego businesses dominate their local markets with AI-powered growth solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
